@@ -1,0 +1,39 @@
+{
+  "name": "server_side_javascript",
+  "version": "1.0.0",
+  "description": "server side javascript tutorials",
+  "main": "app_main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "start": "supervisor app_main.js",
+    "express": "node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.17",
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.4.1",
+    "es6-promise": "^3.2.1",
+    "es6-shim": "^0.35.1",
+    "express": "^4.13.4",
+    "express-mysql-session": "^1.0.0",
+    "express-session": "^1.13.0",
+    "ico": "^0.3.3",
+    "jade": "^1.11.0",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2",
+    "node-mysql": "^0.4.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pbkdf2-password": "^1.1.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "^5.0.0-beta.9",
+    "sha256": "^0.2.0",
+    "systemjs": "^0.19.31",
+    "zone.js": "^0.6.12"
+  }
+}
