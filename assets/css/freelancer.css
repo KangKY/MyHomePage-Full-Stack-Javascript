@@ -1,13 +1,6 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-
 #columns{
     color: black;
-    column-width: 300px;
+    column-width: 250;
     column-gap: 15px;
 }
 #columns figure{
@@ -19,9 +12,17 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);;
 }
 #columns figure img{
-    width:100%;
+    max-width:100%;
     margin: 0px;
+    overflow: hidden;
 }
+
+#columns .main-img
+{
+    max-width: inherit;
+    overflow: hidden;
+}
+
 #columns figure figcaption{
     border-top:1px solid rgba(0,0,0,0.2);
     padding:10px;

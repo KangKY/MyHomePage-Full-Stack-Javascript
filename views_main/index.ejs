@@ -115,10 +115,12 @@
                     <div id="about_columns" class="intro-text">
                         <div>
                             <img class="img-responsive center" src="img/favicon.png" alt="">
-                                <a href="#">ruddlf4933@naver.com</a>
-                                <a href="#">ruddlf4933@naver.com</a>
-                                <a href="#">ruddlf4933@naver.com</a>
-                                <a href="#">ruddlf4933@naver.com</a>
+                                <p>
+                                    <a href="#">ruddlf4933@naver.com</a>
+                                </p>
+                                <p><a href="#">ruddlf4933@naver.com</a></p>
+                                <p><a href="#">ruddlf4933@naver.com</a></p>
+                                <p><a href="#">ruddlf4933@naver.com</a></p>
                         </div>
                         <div class="career">
                             <p><i class="glyphicon glyphicon-calendar">이력</i>
@@ -174,7 +176,7 @@
                                     </div>
                                 </div>
                                 <div class="skill_content">
-                                    <img  class="img_skill" src="img/nodejs.png" alt="">
+                                    <img  class="img_skill" src="img/unity.svg" alt="">
                                     <div class="progress">
                                       <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
                                         <span class="sr-only">45% Complete</span>
@@ -246,171 +248,28 @@
                                  </div> <!-- portfolio-btn end -->
 
                                  <div id = "columns" class="portfolio-container">
-
-                                     <div class="mix single-portfolio mobile branding " data-my-order="1">
-                                         <img class="portfolio-img" src="img/tkd.png" alt="">
-                                         <div class="portfolio-overlay">
-                                             <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-6.jpg">
-                                                 <img src="img/zoom-icon.png" alt="Zoom">
-                                             </a>
-                                             <h3>Year Passing</h3>
-                                         </div>
-                                     </div> <!-- single portfolio  -->
-                                     <!--div >
-                                         <figure class="mix single-portfolio web " data-my-order="2">
-                                             <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
-                                             <div class="portfolio-overlay">
-                                                 <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-2.jpg">
-                                                 </a>
-                                                 <h3>UI App</h3>
-                                             </div>
-                                         </figure>
-
-
-                                     </div>
-                                     <div >
-                                         <figure class="mix single-portfolio web " data-my-order="2">
-                                             <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
-                                             <div class="portfolio-overlay">
-                                                 <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-2.jpg">
-                                                 </a>
-                                                 <h3>UI App</h3>
-                                             </div>
-                                         </figure>
-
-
-                                     </div>
-                                     <div >
-                                          <figure class="mix single-portfolio web " data-my-order="2">
-                                              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
-                                              <div class="portfolio-overlay">
-                                                  <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-2.jpg">
-                                                  </a>
-                                                  <h3>UI App</h3>
-                                              </div>
-                                          </figure>
-
-
-                                      </div>
-                                     <div >
                                          <% for(var i=0; i < data.length ;i++) {%>
-                                         <figure class="mix single-portfolio mobile " data-my-order="3">
-                                             <img src="<%= data[i].description %>" class="img-responsive" alt="">
-                                             <!--figcaption>
-                                                 <p>
+                                         <figure class="mix single-portfolio <%=data[i].category %> " data-my-order="3">
+                                            <div class="main-img">
+                                                <img src="<%= data[i].thumbnail_src %>" class="img-responsive" alt="">
+                                            </div>
+                                            <figcaption>
+                                                <p>
                                                      <a href="#portfolioModal<%= data[i].idx %>"
                                                         class="btn btn-primary portfolio-link"
                                                         data-toggle="modal"
                                                         role="button">Button
                                                      </a>
-                                                 </p>
+                                                     <%= data[i].title %>
+                                                </p>
                                              </figcaption>
                                          </figure>
                                          <%}%>
-
-                                     </div><!-- single portfolio  -->
-
-                                     <!--div class="mix single-portfolio mobile branding " data-my-order="4">
-                                         <img class="portfolio-img" src="img/portfolio-img/portfolio-image-4.jpg" alt="">
-                                         <div class="portfolio-overlay">
-                                             <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-4.jpg">
-                                                 <img src="img/zoom-icon.png" alt="Zoom">
-                                             </a>
-                                             <h3>Market Research</h3>
-                                         </div>
-
-                                     </div>
-
-                                     <div class="mix single-portfolio web branding " data-my-order="5">
-                                         <img class="portfolio-img" src="img/portfolio-img/portfolio-image-5.jpg" alt="">
-                                         <div class="portfolio-overlay">
-                                             <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-5.jpg">
-                                                 <img src="img/zoom-icon.png" alt="Zoom">
-                                             </a>
-                                             <h3>3D Branding</h3>
-                                         </div>
-
-                                     </div>
-
-                                     <div class="mix single-portfolio web " data-my-order="6">
-                                         <img class="portfolio-img" src="img/portfolio-img/portfolio-image-1.jpg" alt="">
-                                         <div class="portfolio-overlay">
-                                             <a class="portfolio-lightbox" href="img/portfolio-img/portfolio-image-1.jpg">
-                                                 <img src="img/zoom-icon.png" alt="Zoom">
-                                             </a>
-                                             <h3>IOS App UI Kit</h3>
-                                         </div>
-
-                                     </div><!-- single portfolio  -->
-
                                  </div> <!-- portfolio-container end -->
                              </div><!--  portfolio-column end -->
                            </div> <!-- row end -->
                         </div>
                    </section>
-
-
-
-
-
-
-                    <section id="portfolio">
-                        <div class="container_sub">
-                            <!--div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <h2 >Portfolio</h2>
-                                    <hr class="star-primary">
-                                </div>
-                            </div>-->
-                            <div id="columns">
-
-                                <% for(var i=0; i < data.length ;i++) {%>
-                                <figure>
-                                    <img src="<%= data[i].description %>" class="img-responsive" alt="">
-                                    <figcaption>
-                                        <p>
-                                            <a href="#portfolioModal<%= data[i].idx %>"
-                                               class="btn btn-primary portfolio-link"
-                                               data-toggle="modal"
-                                               role="button">Button
-                                            </a>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <%}%>
-                                <!--figure>
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
-                                    <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
-                                </figure>
-
-                                <figure>
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rapunzel.jpg">
-                                    <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
-                                </figure>
-
-                                <figure>
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/belle.jpg">
-                                    <figcaption>Belle, based on 1770’s French court fashion</figcaption>
-                                </figure>
-
-                                <figure>
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg">
-                                    <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg">
-                                    <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg">
-                                    <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
-                                </figure-->
-                            </div>
-
-
-
-                        </div>
-                    </section>
                 </div>
             </div>
         </div>

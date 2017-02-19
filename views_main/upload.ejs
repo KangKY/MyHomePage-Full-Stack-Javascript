@@ -38,14 +38,14 @@
         </p>
         <span>
           <label class="label label-default">시작 날짜</label>
-            <input id="fromDate" class="datepicker" type="text" name="start-date">
+            <input id="fromDate" class="datepicker" type="text" name="start_date">
         </span>
         <span>
           <label class="label label-default">종료 날짜</label>
-            <input id="toDate" class="datepicker" type="text" name="end-date">
+            <input id="toDate" class="datepicker" type="text" name="end_date">
         </span>
         <p>
-          <label class="label label-default">썸네일 이미지</label>
+            <label class="label label-default">썸네일 이미지</label>
             <input class="form-control" type="file" name="thumbnail">
         </p>
         <textarea id ="description"
@@ -78,11 +78,9 @@
 </script>
 
 <script>
-
-
-    $( "#fromDate" ).datepicker({
+    $( "#fromDate" ).datepicker({dateFormat: 'yy-mm-dd'
     });
-    $( "#toDate" ).datepicker({
+    $( "#toDate" ).datepicker({dateFormat: 'yy-mm-dd'
     });
 
 </script> 

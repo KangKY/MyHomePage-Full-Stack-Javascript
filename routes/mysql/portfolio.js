@@ -5,7 +5,7 @@ module.exports = function(conn) {
     // 업로드 관련
     var _storage = multer.diskStorage({
       destination: function (req, file, cb) {
-        cb(null, '/upload')
+        cb(null, 'assets/upload')
       },
       filename: function (req, file, cb) {
         cb(null, file.originalname)
@@ -29,33 +29,41 @@ module.exports = function(conn) {
 
     // upload.single('avatar')
     // =사용자가 전송한 데이터에 파일이 포함되있다면 가공해서 req객체에 파일 추가
-    route.post('/', upload.single('userfile'), function(req, res){
+    route.post('/', upload.single('thumbnail'), function(req, res){
         
-        res.send(req.body);
+       // res.send(req.body);
+         
+        //console.log(req.body);
         
-        /*var src = req.file.destination.split('/');
 
+      
+        var title = req.body.title;
+        var category = req.body.category;
+        
+        var src = req.file.destination.split('/');
         var source = src[1]+"/"+req.file.originalname;
+        
+        var description = req.body.description;
+        var skills = req.body.skills;
+        var start_date = req.body.start_date;
+        var end_date = req.body.end_date;
 
 
-        var title = req.file.originalname;
-        var description = source;
-        var author = req.body.author;
-
-
-        var params = [title, description, author];
-        var sql = 'INSERT INTO projects_info(title, description_short, description_long, start_date, end_date) VALUES(?, ?, ?,?,?)';
+        var params = [title, category, source, skills, description, start_date, end_date];
+        //console.log(params);
+        var sql = 'INSERT INTO projects_info(title, category,thumbnail_src, skills, description,  start_date, end_date) VALUES(?, ?, ?, ?, ?, ?, ?)';
         conn.query(sql, params, function(err, results, fields){
             if(err)
             {
+                 console.log(err);
                 res.status(500).send('Internal Server Error');
-                console.log(err);
+               
             }
 
             else{
                  res.render('upload',{data:req.file});
             }
-        });*/
+        });
     });
 
     route.get('/upload', function(req, res){
