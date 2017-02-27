@@ -1,253 +1,403 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="en" class="no-js">
 
 <head>
-
+	 <!-- Basic Page Needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>강경일 개발자 포트폴리오</title>
+    <meta name="description" content="Swiftly Personal/Portfolio Template">
+    <meta name="keywords" content="personal template, portfolio template, creative, bootstrap, html5/css5">
+    <meta name="author" content="Harry">
 
-    <title>강경일 홈페이지</title>
-    <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Google-Fonts
+    ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/green.css" media="screen"/>
+
+    <!-- Modernizr
+    ================================================== -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
 </head>
 
-<body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top" data-menu="0">Start</a>
-            </div>
+<body data-spy="scroll" data-offset="120">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a id="menu_portfolio" href="#about" data-menu="400">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a id="menu_portfolio" href="#skill" data-menu="900">Skill</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a id="menu_portfolio" href="#portfolio" data-menu="1200">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a id="menu_contact" href="#" data-menu="1500">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- Preloader -->
+    <div class="animationload">
+        <div class="loader">
+            Loading...
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+    </div> 
+    <!-- End Preloader -->
 
-    <!-- Header -->
-    <header>
-        <div id="slider-container">
-            <div    data-0="transform:translate(0%,0%);"
-                    data-100p=""
-                    data-200p="transform:translate(-25%,0%);"
-                    data-250p=""
-                    data-300p="transform:translate(-50%,0%);"
-                    data-350p=""
-                    data-400p="transform:translate(-50%,0%);"
-                    data-450p=""
-                    data-500p="transform:translate(-50%,-25%);"
-                    data-550p=""
-                    data-600p="transform:translate(-50%,-50%);"
 
-                    data-602p="transform:translate(-50%,-51%);"
-                    data-605p="transform:translate(-50%,-55%);"
-                    data-610p="transform:translate(-50%,-60%);"
-                    data-620p="transform:translate(-50%,-65%);"
-                    id="slides"
-                 >
+	<!-- Container -->
+	<div id="container" class="container">
 
-                <div id="slide-1" class="slide">
+		<!-- LEFT-SIDEBAR
+		================================================== -->
+		<div id="sidebar" class="fl_menu">
+			<!-- header -->
+			<header class="sidebar-section">
+				<div class="header-logo">
+                    <!-- Logo -->
+					<a class="logo" href="#">
+                        <span>Programmer<br>Portfolio</span> <!-- Your logo here-->
+                    </a>
+				</div>
+				<a class="elemadded responsive-link" href="#">Menu</a>
+				<div class="navbar-vertical">
+					<ul class="main-menu nav">
+						<li class="active"><a href="#about"><i class="pe-7s-id"></i>About me</a></li>
+						<li><a href="#skills"><i class="pe-7s-science"></i>Skills</a></li>
+						<li><a href="#experience"><i class="pe-7s-paper-plane"></i>Experience</a></li>
+						<li><a href="#education"><i class="pe-7s-study"></i>Education</a></li>
+						<li><a href="#portfolio"><i class="pe-7s-portfolio"></i>Portfolio</a></li>
+						<li><a href="#contact"><i class="pe-7s-call"></i>Contact</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="social-box text-center" id="sidebar-social">
+				<ul class="list-inline">
+					<li><a href="https://www.facebook.com/kang.kyungil.1" id="facebook"><i class="fa fa-facebook"> Facebook</i></a></li>
+					<li><a href="https://github.com/KangKY" id="linkedin"><i class="fa fa-github"> Github</i></a></li>
+					<li><a href="" id="pinterest"><i class="fa fa-instagram"> Instagram</i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- End Left-Sidebar -->
 
-                    <div class="intro-text"
-                         >
-                        <img id="main_picture" class="img-responsive center" src="img/lang.jpg" alt="">
-                        <span class="name">
-                          I'm 강경일<br />
-                          
-                        </span>
-                        <span class="skills">
-                            소프트웨어 개발자
+		<!-- content 
+		================================================== -->
+		<div id="content">
 
-                        </span>
+			<!--====================
+                HOME
+                ====================-->
+			<section class="home wow fadeInLeft animated" id="home">
+                <div class="content text-center">
+                    <h1>Hello ! I am  <span>Kang Kyung Il</span><br>
+                    안녕하세요! <span>강경일 </span>입니다.
+                    </h1>
+                    <div class="tlt">
+                        <ul class="texts">
+                            <li>Programmer</li>
+                            <li>Web Developer</li>
+                        </ul>
                     </div>
                 </div>
-                <div id="slide-2"  class="slide"
-                     >
+                <div class="clear"></div>
+            </section>
+			<!-- End Home -->
 
-                    <div id="about_columns" class="intro-text">
-                        <div>
-                            <img class="img-responsive center" src="img/favicon.png" alt="">
-                                <p>
-                                    <a href="#">ruddlf4933@naver.com</a>
-                                </p>
-                                <p><a href="#">ruddlf4933@naver.com</a></p>
-                                <p><a href="#">ruddlf4933@naver.com</a></p>
-                                <p><a href="#">ruddlf4933@naver.com</a></p>
+            <!-- ====================
+                 ABOUT-ME
+                 ====================-->
+			<section class="about section section-t wow fadeInRight animated" id="about">
+		        <p class="sub-title">Who am i ?</p>
+				<h3 class="title">Personal Details</h3>		
+				<hr/>
+	            <p>
+                    안녕하세요. <br>성실한 개발자가 되고 싶은 강경일입니다. 
+                    현재 초보 개발자로 열심히 성장 중입니다. 앞으로의 개발물 등을 기록하기 위해 Node.js 풀스택 javascript 포트폴리오 사이트를 직접 제작했습니다. 새로운 프로젝트 진행 시 지속적으로 업로드를 할 생각입니다. 이 사이트를 제작하는 현재의 목표는 프론트엔드 개발자가 되는 것이 목표입니다. 그래서 Angular2와 JS 패키지 관리자 등을 공부 중입니다.
+                    현재 회사에서는 주로 Unity3D를 통한 게임 및 컨텐츠 제작과 웹 프로젝트 및 유지보수 등을 맡고 있습니다.
+                    <br>
+                    감사합니다.
+	            </p>
+	            <ul class="list-inline">
+	                <li><span>Name:</span> 강경일</li>
+	                <li><span>Email:</span> <a href="mailto:johnathan@mail.com">ruddlf4933@naver.com</a></li>
+	                <li><span>Phone:</span> 010-2462-4933</li>
+	                <li><span>Date of birth:</span> 1991-01-10</li>
+	                <li><span>Address:</span> 경기도 성남시 중원구 상대원 1동 선경아파트 </li>
+	                <li><span>University:</span> 경희대학교 컴퓨터공학과 </li>
+	            </ul>
+		        <div class="clear"></div>
+	            <!--div class="text-center margin-t-40">
+	                <a href="#" class="btn btn-custom"><i class="fa fa-download"></i> Download Resume</a>
+	            </div-->
+			</section>
+            <!-- End About-Us -->
+
+            <!-- ====================
+                 Skills 
+                 ====================-->
+			<section class="skills section section-t wow fadeInLeft animated" id="skills">
+				<p class="sub-title">What I'm best at</p>
+				<h3 class="title">Skills &amp; Knowledge</h3>
+				<hr/>
+				<div class="row">
+                	<div class="col-md-6">
+                        <!-- Skill-1 -->
+                        <div class="fixed">
+                            <div class="progress-bar-description">
+                            	HTML&amp;CSS&amp;Javascript(jQuery)
+                                <span style="left:86%">86%</span>
+                            </div><!-- end .progress-bar-description -->
+                            <div class="progress custom-progress">
+						        <div class="progress-bar custom-progress-bar progress-custom-color" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
+						        </div>
+						    </div><!-- end .progress-bar -->
                         </div>
-                        <div class="career">
-                            <p><i class="glyphicon glyphicon-calendar">이력</i>
-                                <br/>
-                                <p>경희대학교 학사 ( 2009 ~ 2015 )</p>
-                            <p>정보처리기사 취득 (2015. 03)</p> 
-                            
-                            
-                            
+                        <!-- Skill-2 -->
+                        <div class="fixed">
+                            <div class="progress-bar-description">
+                            	Node.js(express)
+                                <span style="left:73%">73%</span>
+                            </div><!-- end .progress-bar-description -->
+                            <div class="progress custom-progress">
+						        <div class="progress-bar custom-progress-bar progress-custom-color" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">
+						        </div>
+						    </div><!-- end .progress-bar -->
+                        </div>
+                        <!-- Skill-3 -->
+                        <div class="fixed">
+                            <div class="progress-bar-description">
+                            	Unity3D(C#)
+                                <span style="left:79%">79%</span>
+                            </div><!-- end .progress-bar-description -->
+                            <div class="progress custom-progress">
+						        <div class="progress-bar custom-progress-bar progress-custom-color" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width: 79%;">
+						        </div>
+						    </div><!-- end .progress-bar -->
+                        </div>
+                        <!-- Skill-4 -->
+                        <div class="fixed">
+                            <div class="progress-bar-description">
+                            	PHP(Codeigniter)
+                                <span style="left:57%">57%</span>
+                            </div><!-- end .progress-bar-description -->
+                            <div class="progress custom-progress">
+						        <div class="progress-bar custom-progress-bar progress-custom-color" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%;">
+						        </div>
+						    </div><!-- end .progress-bar -->
+                        </div>
+                        <!-- skill-5 -->
+                        <div class="fixed">
+                            <div class="progress-bar-description">
+                            	C, C++
+                                <span style="left:33%">33%</span>
+                            </div><!-- end .progress-bar-description -->
+                            <div class="progress custom-progress">
+						        <div class="progress-bar custom-progress-bar progress-custom-color" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+						        </div>
+						    </div><!-- end .progress-bar -->
+                        </div>
+                        <!-- skill-6 -->
+                        <div class="fixed">
+                            <div class="progress-bar-description">
+                            	React.js, Angular2.0
+                                <span style="left:33%">33%</span>
+                            </div><!-- end .progress-bar-description -->
+                            <div class="progress custom-progress">
+						        <div class="progress-bar custom-progress-bar progress-custom-color" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+						        </div>
+						    </div><!-- end .progress-bar -->
+                        </div>
+                    </div><!-- end .col-md-6 -->
+
+                    <!-- Knowledge --> 
+                    <div class="col-md-6">	
+                        <ul class="check">                                	
+                            <li>정보처리기사</li>
+                            <li>반응형 웹, 웹 접근성</li>
+                            <li>RESTful API 설계</li>
+                            <li>크롬 개발자 도구</li>
+                            <li>vi editor</li>
+                            <br>
+                            <li>iOS, Android 앱 개발 및 출시 경험</li>
+                            <li>구글 게임 서비스 연동</li>
+                            <li>구글 클라우스 서비스(Firebase)</li>
+                        </ul>            
+                    </div><!-- end .span3 -->
+                </div> <!-- End Row --> 
+            </section>
+            <!-- End Skills -->
+
+            <!-- ====================
+                 EXPERIENCE 
+                 ====================-->
+            <section class="experience section section-t wow fadeInRight animated" id="experience">
+		        <p class="sub-title">My Background</p>
+				<h3 class="title">Work Experience</h3>
+				<hr/>
+                <!-- Experience-Item -->
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<div class="cv-section-title">
+                            <h3><span>2016<small>01월</small></span> -
+                                <span>2017<small>현재</small></span>
+                            </h3>
+                            <h4>(주) 트리즈코퍼레이션</h4>
+                        </div>
+					</div>
+						
+                    <div class="col-md-9 col-sm-8">
+                        <div class="cv-item">
+                            <h4>개발부서 사원</h4>
+                            <p>
+				                모바일 앱(Android), 웹, 게임(Unity3D) 등
+                                (하단 포트폴리오 참고)
                             </p>
-                            <p><i class="glyphicon glyphicon-briefcase">경력</i></p>
-                            <p>경희대학교 컴퓨터공학</p> 
-                            <p>프로그래밍 동아리 '다솜' ( 2009. 03 ~ 2015. 08 )</p>
-                            <br />
-                            <p>㈜트리즈코퍼레이션</p> 
-                            <p>소프트웨어 개발자 ( 2016. 01 ~ 현재 )</p>
-                            <br />
-                            <p><i class="glyphicon glyphicon-folder-close">프로젝트</i></p>
-                            <p><a href="#slide-5">Porfolio 메뉴로</a></p>
-                       
+                        </div><!-- end .cv-item -->
+					</div>
+				</div><!-- End row -->
 
+                <!-- Experience-Item -->
+				<div class="row margin-t-40">
+					<div class="col-md-3 col-sm-4">
+						<div class="cv-section-title">
+                            <h3><span>2015<small>06월</small></span> -
+                                <span>2015<small>07월</small></span>
+                            </h3>
+                            <h4>(주) 트리즈코퍼레이션</h4>
                         </div>
-                    </div>
-                </div>
-                <div id="slide-4"  class="slide_height2">
-            <!-- About Section -->
+					</div>
+					<div class="col-md-9 col-sm-8">
+                        <div class="cv-item">
+                            <h4>인턴 근무</h4>
+                            <p>
+    							약 2개월 간의 근무를 통해 웹 프론트엔드 기술의 기초를 다뤘습니다. 
+                                HTML5, CSS, javascript, jQuery(Ajax) 등을 통해 웹 프론트 구성 업무를 담당했습니다. 또한, Codeigniter를 통한 MVC 모델링 기반 홈페이지 개발도 진행했습니다.
+                            </p>
+                        </div><!-- end .cv-item -->
+					</div>
+				</div><!-- End Row -->
 
-                <section class="success" id="about">
-                    <div class="container_sub">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>SKILL</h2>
-                                <hr class="star-light">
-                            </div>
+               
+			</section>
+            <!-- End Experience -->
+
+            <!-- ====================
+                 EDUCATION 
+                 ====================-->
+			<section class="experience education section section-t wow fadeInLeft animated" id="education">
+		        <p class="sub-title">My Education</p>
+				<h3 class="title">Education</h3>
+				<hr/>
+                <!-- Education-Item -->
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<div class="cv-section-title">
+                            <h3><span>2013<small>06월</small></span> -
+                                <span>2013<small>07월</small></span>
+                            </h3>
+                            <h4>미국 산호세</h4>
                         </div>
-                        <div class="row">
-                            <div class="skill-container">
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/git.png" alt="">
-                                    <div class="progress">
-                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                        <span class="sr-only">40% Complete (success)</span>
+					</div>
+					<div class="col-md-9 col-sm-8">
+                        <div class="cv-item">
+                            <h4>IT 해외연수</h4>
+                            <p>
+    							
+                            </p>
+                        </div><!-- end .cv-item -->
+					</div>
+				</div><!-- End Row --> 
+
+                <!-- Education-Item -->
+				<div class="row margin-t-40">
+					<div class="col-md-3 col-sm-4">
+						<div class="cv-section-title">
+                            <h3><span>2009<small>03월</small></span> -
+                                <span>2015<small>08월</small></span>
+                            </h3>
+                            <h4>경희대학교</h4>
+                        </div>
+					</div>	
+					<div class="col-md-9 col-sm-8">
+                        <div class="cv-item">
+                            <h4>컴퓨터공학 학사</h4>
+                            <p>
+								C++을 시작으로 
+    							프로그래밍 동아리 '다솜'에서 주로 활동하며, 프로그래밍 지식의 기반을 다진 경험입니다.
+                            </p>
+                        </div><!-- end .cv-item -->
+					</div>
+				</div><!-- End Row -->
+			</section>
+            <!-- End Education -->
+
+            <!-- ====================
+                 PORTFOLIO 
+                 ====================-->
+            <section class="section section-t" id="portfolio">
+                <p class="sub-title">My work</p>
+                <h3 class="title">Portfolio</h3>
+                <hr/>
+
+                <div class="row margin-t-20">
+                    <div class="col-md-12">
+                        <!--.portfolio-filter-->
+                        <ul class="portfolio-filters">
+                            <li class="filter active" data-filter="all">All</li>
+                            <li class="filter" data-filter="web">Web</li>
+                            <li class="filter" data-filter="mobile">Mobile</li>
+                            <li class="filter" data-filter="game">Game</li>
+                            <li class="filter" data-filter="etc">ETC</li>
+                        </ul><!-- End portfolio-filter-->
+                    
+                        <div id="grid" class="portfolio-items">
+                            <div class="row">
+                                <% for(var i=0; i < data.length ;i++) {%>
+                                <!-- ===== Portfolio Item-1 ===== -->
+                                <!--div class="col-sm-4 mix margin-t-20 effects overlay-effect clearfix <%=data[i].category %> ">
+                                    <div class="img">
+                                        <img src="<%= data[i].thumbnail_src %>" alt="Portfolio Item">
+                                        <div class="overlay">
+                                            <button class="md-trigger expand" data-modal="modal-<%= data[i].idx %>"><i class="fa fa-search"></i><br/>view More</button>
+                                        </div>
                                     </div>
-                                  </div>
+                                </div> <
+                                <!-- Portfolio Item-1 Details -->
+                                <div class="md-modal md-effect" id="modal-<%= data[i].idx %>">
+                                    <div class="md-content">
+                                        <div class="folio">
+                                            <div class="port-img margin-t-40">
+                                                <img src="<%= data[i].thumbnail_src %>" alt="Portfolio-image" class="port-details-img img-responsive">
+                                            </div>
+                                            <div class="sp-name"><strong><%= data[i].title %></strong><br><span><%= data[i].skills %></span></div>
+                                            <div class="sp-dsc">
+                                               
+                                                <%= data[i].description %>
+                                                <!--blockquote>
+                                                    <p>Here is a long quotation here is a long quotation proin gravida nibh vel velit auctor aliquet aenean sollicitudin.</p>
+                                                </blockquote>
+                                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+                                            </div>
+                                            <div class="sp-social">
+                                                <ul>
+                                                    <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <button class="md-close"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="md-overlay"></div>
+                                <%}%>
                                 
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/nodejs.png" alt="">
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                        <span class="sr-only">45% Complete</span>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/unity.svg" alt="">
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                        <span class="sr-only">45% Complete</span>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/nodejs.png" alt="">
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                        <span class="sr-only">45% Complete</span>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/nodejs.png" alt="">
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                        <span class="sr-only">45% Complete</span>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/java.jpg" alt="">
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">45% Complete</span>
-                                          
-                                      </div>
-                                        
-                                    </div>
-                                    <div class="skill-comment">Java - 초급</div>
-                                </div>
-                               
-                                <div class="skill_content">
-                                    <img  class="img_skill" src="img/react.png" alt="">
-                                    <div class="progress">
-                                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                        <span class="sr-only">45% Complete</span>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                </div>
-                <!-- Portfolio Grid Section -->
-                <div id="slide-5"  class="slide_height3">
-                  <section  id="portfolio" class="portfolio">
-                        <div class="container wow fadeInUp all-portfolio" data-wow-duration="2s">
-                           <div class="row">
-                               <div class="section-title text-center">
-                                   <h1>Portfolio</h1>
-                                   <p>
-                                       진행했던 프로젝트들입니다.<br />
-                                       <strong>새로운 프로젝트 완성 시 계속 업로드 할 예정입니다.</strong>
-                                   </p>
-                               </div> <!-- section title end -->
-                           </div> <!-- row end -->
-                           <div class="row">
-                             <div class="section-content">
-                                 <div class="portfolio-btn">
-                                     <button class="filter" data-filter="all">All </button>
-                                     <button class="filter" data-filter=".branding">Branding</button>
-                                     <button class="filter" data-filter=".web">Web Design</button>
-                                     <button class="filter" data-filter=".mobile">Mobile App</button>
-                                 </div> <!-- portfolio-btn end -->
-
-                                 <div id = "columns" class="portfolio-container">
+                                <!-- /Portfolio Item-1 Details -->
+                                <div id = "columns" class="portfolio-container">
                                          <% for(var i=0; i < data.length ;i++) {%>
                                          <figure class="mix single-portfolio <%=data[i].category %> " data-my-order="3">
                                             <div class="main-img">
@@ -266,103 +416,101 @@
                                          </figure>
                                          <%}%>
                                  </div> <!-- portfolio-container end -->
-                             </div><!--  portfolio-column end -->
-                           </div> <!-- row end -->
+                            </div> <!-- End Row -->
+                        </div> <!-- End .grid -->
+                    </div><!--.col-md-12 of portfolio filter-->
+                </div><!--.row-->
+            </section>
+            <!-- End Portfolio -->
+
+
+            <!-- ====================
+                 CONTACT 
+                 ====================-->
+            <section id="contact" class="contact section section-t wow fadeInLeft animated">
+                <p class="sub-title">My Contact</p>
+                <h3 class="title">궁금한 사항 있으면 연락주세요.</h3>
+                <hr/>
+
+                <!-- CONTACT FORM -->
+                <div id="cformSuccessMsg" style="display: none;"></div>
+                <form id="contactForm" name="contactForm" method="POST" class="margin-t-40">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Name -->
+                            <input class="" type="text" name="contact_name" id="contact_name" placeholder="Name" />
+                            <!-- Email -->
+                            <input class="" type="text" name="contact_email" id="contact_email" placeholder="Email" />
+                            <!-- Message -->
+                            <textarea name="contact_message" id="contact_message" placeholder="Message"></textarea>
+                            <!-- Submit_Button -->
+                            <div class="text-right">
+                                <button class="btn btn-custom" id="contact_submit_btn" name="contact_submit_btn"><span>Say Hello !</span></button>
+                            </div>
                         </div>
-                   </section>
+
+                        <div class="col-md-6 text-center">
+                            <div class="pro-img">
+                                <img class="circle-img" src="img/img1.jpg" alt="team" width="140" height="140"> 
+                            </div>
+                            <p>010-2462-4933</p>
+                            <p><a href="mailto:johnathan@deo.com">ruddlf4933@naver.com</a></p>
+                        </div>
+                    </div> <!-- End row -->
+                </form><!-- END FORM -->
+            </section>
+            <!-- end Contact -->
+
+            <!-- ====================
+                 SOCIAL-SECTION
+                 ====================-->
+            <section class="section social-section wow fadeInRight animated">
+                <div class="sp-social text-center">
+                    <ul>
+                        <a href="#">
+                            <li><i class="fa fa-facebook social-btn fb"></i><br/></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-twitter social-btn twt"></i><br/>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-github social-btn sky"></i><br/>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <i class="fa fa-instagram social-btn inst"></i><br/>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="gototop js-top active text-center">
-          스크롤 내려주세요
-          <a href="#" class="js-gotop center">
+            </section>
+            <!-- End Social-section -->
 
-            <i class="glyphicon glyphicon-arrow-down"></i>
-          </a>
-        </div>
-    </header>
-
-    
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-  <script src="js/jquery.mixitup.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+            <!-- ====================
+                 FOOTER
+                 ====================-->
+            <footer class="footer">
+                <p class="copyright">© 2017 ruddlf4933@naver.com. All rights Reserved.</p>
+            </footer>
+            <!-- End Footer -->
 
 
+		</div>
+		<!-- End content -->
+	</div>
+    <!-- End Container -->
 
-    <!-- Skrollr JavaScript -->
-    <script src="js/skrollr.min.js"></script>
-    <script src="js/skrollr.menu.min.js"></script>
-    <script type="text/javascript">
-        var s = skrollr.init({smoothScrolling:true});
-        /*skrollr.menu.init(s, {
-            //skrollr will smoothly animate to the new position using `animateTo`.
-            animate: true,
-
-            //The easing function to use.
-            easing: 'sqrt',
-
-            //Multiply your data-[offset] values so they match those set in skrollr.init
-            scale: 2,
-
-            //How long the animation should take in ms.
-            duration: function(currentTop, targetTop) {
-                //By default, the duration is hardcoded at 500ms.
-                return 500;
-
-                //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-                //return Math.abs(currentTop - targetTop) * 10;
-            },
-
-            //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
-            //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
-            handleLink: function(link) {
-                return 400;//Hardcoding 400 doesn't make much sense.
-            },
-
-            //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
-            //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
-            //The following will all work (if the user is on the correct page):
-            //http://example.com/currentPage/#foo
-            //http://example.com/currentDir/currentPage.html?foo=bar#foo
-            ///?foo=bar#foo
-            complexLinks: true,
-
-            //This event is triggered right before we jump/animate to a new hash.
-            change: function(newHash, newTopPosition) {
-                //Do stuff
-            },
-
-            //Add hash link (e.g. `#foo`) to URL or not.
-            updateUrl: true //defaults to `true`.
-        });
-        /*$(document).ready(function() {
-            $('header').css('height',window.innerHeight );
-
-            $(window).resize(function(){
-
-                 $('header').css('height',window.innerHeight );
-            })
-        });
-
-            */
-    </script>
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- Scroll top -->
+    <a href="#" class="back-to-top"> <i class="pe-7s-angle-up"></i></a>
 
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+	<!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/jquery.app.js"></script>
 
 
 </body>
-
 </html>

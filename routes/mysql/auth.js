@@ -59,7 +59,7 @@ module.exports = function(conn) {
                         req.session.admin_id = admin.admin_id;
 
                         req.session.save(function(){
-                            res.redirect('/upload/');
+                            res.redirect('/portfolio/');
                         });
                     }
                     else {

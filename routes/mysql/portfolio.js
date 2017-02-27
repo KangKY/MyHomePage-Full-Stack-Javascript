@@ -14,7 +14,7 @@ module.exports = function(conn) {
     var upload = multer({storage : _storage});
 
     route.get('/', function(req, res){
-        res.render('upload');
+        res.render('portfolio');
         /*var sql = 'SELECT * FROM admin';
         conn.query(sql, function(err, results, fields){
             if(err)
@@ -61,12 +61,13 @@ module.exports = function(conn) {
             }
 
             else{
-                 res.render('upload',{data:req.file});
+                //res.send("Good Job");
+                res.render('portfolio');
             }
         });
     });
 
-    route.get('/upload', function(req, res){
+    /*route.get('/upload', function(req, res){
         var sql = 'SELECT * FROM admin';
         conn.query(sql, function(err, results, fields){
             if(err)

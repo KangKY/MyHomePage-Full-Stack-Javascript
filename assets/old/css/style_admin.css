@@ -1,0 +1,17 @@
+html{
+    background-color: darkgray !important;
+}
+#login {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    background-color: white;
+}
+
+#login_form {
+    position: relative;
+    top: 15%;
+}
