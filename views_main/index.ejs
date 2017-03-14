@@ -328,8 +328,11 @@
                             <p>
 								C++을 시작으로 
     							프로그래밍 동아리 '다솜'에서 주로 활동하며, 프로그래밍 지식의 기반을 다진 경험입니다.
+                               
                             </p>
                         </div><!-- end .cv-item -->
+                        <div>
+                        </div>
 					</div>
 				</div><!-- End Row -->
 			</section>
@@ -365,7 +368,7 @@
                                             <button class="md-trigger expand" data-modal="modal-<%= data[i].idx %>"><i class="fa fa-search"></i><br/>view More</button>
                                         </div>
                                     </div>
-                                </div> <
+                                </div--> 
                                 <!-- Portfolio Item-1 Details -->
                                 <div class="md-modal md-effect" id="modal-<%= data[i].idx %>">
                                     <div class="md-content">
@@ -376,7 +379,7 @@
                                             <div class="sp-name"><strong><%= data[i].title %></strong><br><span><%= data[i].skills %></span></div>
                                             <div class="sp-dsc">
                                                
-                                                <%= data[i].description %>
+                                                <%- data[i].description -%>
                                                 <!--blockquote>
                                                     <p>Here is a long quotation here is a long quotation proin gravida nibh vel velit auctor aliquet aenean sollicitudin.</p>
                                                 </blockquote>
@@ -399,9 +402,12 @@
                                 <!-- /Portfolio Item-1 Details -->
                                 <div id = "columns" class="portfolio-container">
                                          <% for(var i=0; i < data.length ;i++) {%>
-                                         <figure class="mix single-portfolio <%=data[i].category %> " data-my-order="3">
-                                            <div class="main-img">
+                                         <figure class="mix single-portfolio effects overlay-effect <%=data[i].category %> ">
+                                            <div class="main-img img">
                                                 <img src="<%= data[i].thumbnail_src %>" class="img-responsive" alt="">
+                                                <div class="overlay">
+                                                    <button class="md-trigger expand" data-modal="modal-<%= data[i].idx %>"><i class="fa fa-search"></i><br/>view More</button>
+                                                </div>
                                             </div>
                                             <figcaption>
                                                 <p>

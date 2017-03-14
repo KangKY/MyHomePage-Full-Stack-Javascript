@@ -590,6 +590,7 @@ button.expand:focus,button.expand:active{
   opacity: 1;
 }
 .img img {
+    /*
   width: -webkit-calc(100% ) !important;
   width: calc(100% + 40px) !important;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -598,7 +599,7 @@ button.expand:focus,button.expand:active{
   -o-transition: opacity 0.35s, -o-transform 0.35s;
   -webkit-transform: translate3d(-40px, 0, 0);
   transform: translate3d(-40px, 0, 0);
-  -ms-transform: translate3d(-40px, 0, 0);
+  -ms-transform: translate3d(-40px, 0, 0);*/
 }
 .img:hover img {
   -webkit-transform: translate3d(0, 0, 0);
@@ -610,8 +611,7 @@ button.expand:focus,button.expand:active{
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
-  max-width: 630px;
+  width: 80%;
   min-width: 320px;
   height: auto;
   z-index: 2000;
